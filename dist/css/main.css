@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  color: black;
+}
+
+body {
+  min-height: 90vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 80px;
+}
+
+.content_wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.content_wrapper a .box {
+  height: 200px;
+  width: 800px;
+  -webkit-box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+}
+
+.content_wrapper a .box h2 {
+  letter-spacing: 2px;
+  font-size: xx-large;
+  margin: 0;
+}
+
+.content_wrapper a .box select {
+  letter-spacing: 2px;
+  font-size: medium;
+}
+
+.content_wrapper a .box p {
+  letter-spacing: 2px;
+  font-size: large;
+}
+
+select {
+  border-radius: 15px;
+  background: #1f42de;
+  background-image: none;
+  border: 1px solid black;
+  padding:  10px;
+  color: white;
+  font-size: medium;
+}
+
+.bomb{
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+} .bomb p {
+  font-size: x-large;
+}
+
+button{
+  border-radius: 15px;
+  background: #1f42de;
+  background-image: none;
+  border: 1px solid black;
+  padding:  10px;
+  color: white;
+  font-size: medium;
+}

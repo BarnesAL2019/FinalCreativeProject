@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Minesweeper</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/la_AEFO8m7U?controls=0&showinfo=0&start=204&rel=0&autoplay=1&loop=1&mute=1&playlist=la_AEFO8m7U" frameborder="0" allowfullscreen></iframe>
+      <!-- Video Source: https://www.youtube.com/watch?v=la_AEFO8m7U -->
+    </div>
+  </div>
+  <div class="content_wrapper">
+    <a>
+      <div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url(img/kirbs.webp);">
+          <h2>
+            Welcome to Minesweeper!
+          </h2>
+          <p>
+            Select Difficulty:
+          </p>
+          
+          <select name="select-game-mode" id="select-game-mode">
+            <option value="easy" selected>Easy - 9x9 / 10 Mines</option>
+            <option value="normal">Normal - 16x16 / 40 Mines</option>
+            <option value="hard">Hard - 16x30 / 99 Mines</option>
+          </select>
+      </div>
+    </a>
+  </div>
+<div class="bomb">
+  <p>Mines Remaining: <span id="bomb-counter"></span></p>
+</div>
+<minesweeper-game id="minesweeper" restart-selector="#restart-game-button" bomb-counter-selector="#bomb-counter"></minesweeper-game>
+<p>
+  <button id="restart-game-button">New Game</button>
+  <button style="display: none;" id="restart-game-button-confirm">Restart with Confirm!</button>
+</p>
+<script src="main.js"></script>
+</body>
+</html>
